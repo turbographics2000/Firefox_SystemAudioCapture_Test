@@ -5,4 +5,5 @@ navigator.mediaDevices.getUserMedia({
   video: false
 }).then(stream => {
   vid.srcObject = stream;
+  vid.play();
 });
